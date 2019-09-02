@@ -15,3 +15,4 @@ Onde pressionando:
 "3" O Coeficiente de Aglomeração de cada vértice e o Coeficiente médio de Aglomeração do Grafo.
 
 
+Documentação usando a ferramenta Doxygen, encontra-se nas pasta HTML.

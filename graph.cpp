@@ -12,6 +12,7 @@ void menu(click& c, graph& g){
 
     while(1){
         cin >> opcao;
+        system("clear");
     switch (opcao)
     {
         case 0:

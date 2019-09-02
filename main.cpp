@@ -4,13 +4,16 @@
 using namespace std;
 
 int main(){
-
     graph g(63);
     click c;
+
     create_graph(g);
+    click_begin(g, c);
 
     bfs(g, 1);
-    click_begin(g, c);
-    print_click(c); 
 
+    print_click(c); 
+    all_agl(c, g);
+
+    return 0;
 }

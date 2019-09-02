@@ -105,7 +105,7 @@ void print_click(click& c){
     sort(c.begin(), c.end(), [](const vector<int>& a, const vector<int>& b) -> bool {
         return a.size() > b.size();});
     for(int i = 0; i < c.size(); i++){
-        cout << "Tamanho ClickMaximal = " << c[i].size() << " Vertices:{";
+        cout << "Tamanho CliqueMaximal = " << c[i].size() << " Vertices:{";
         for(int k = 0; k < c[i].size();k++){
             cout << c[i][k] << ",";
         }
@@ -113,6 +113,40 @@ void print_click(click& c){
     }
 }
 
+void all_agl(click& c, graph& g){
+    
+    click tri;
 
+    for(int i = 0; i < c.size(); i++){
+        if(c[i].size() == 3){
+            tri.push_back(c[i]);
+        }
+    }
 
+    double media = 0;
 
+    for(int i = 1; i < g.size(); i++){
+        int much_tri = 0;
+
+        for(auto &it : tri){
+            auto belong = find(it.begin(), it.end(), i) != it.end();
+            if (belong) {
+                much_tri++;
+            }
+        }
+
+        int tam = g[i].size();
+        double agl;
+
+        if(much_tri == 0){
+            agl = 0.0f;
+        }   else {
+            agl = (2.0f*much_tri)/(tam*(tam - 1));
+        }
+        media += agl;
+        cout << "Coeficiente de Aglomeracao por vertice " <<  i << " : " << agl << endl;
+    }
+
+    cout << "Coeficiente de Aglomeracao Medio : " << media / (g.size()-1) << endl;
+
+}

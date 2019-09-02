@@ -33,7 +33,7 @@ void click_begin(graph& g, click& c); //para verificar os cliques maximais, util
 */
 
 void bosch_alg(graph& g, click& c, vector<int>& R, vector<int>& P, vector<int>& X);
-
 void print_click(click& c);
+void all_agl(click& c, graph& g);
 
 #endif

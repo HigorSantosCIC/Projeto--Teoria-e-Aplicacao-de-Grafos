@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "graph.h"
+#include "func_graph.h"
 using namespace std;
 
 void menu(click& c, graph& g){
@@ -33,7 +33,6 @@ void menu(click& c, graph& g){
             }
         }
 }
-
 
 void create_graph(graph& g) {
     fstream mygraph;

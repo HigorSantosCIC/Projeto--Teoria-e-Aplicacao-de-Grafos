@@ -1,5 +1,5 @@
 #include <bits/stdc++.h>
-#include "graph.h"
+#include "func_graph.h"
 
 using namespace std;
 
@@ -9,7 +9,6 @@ int main(){
     click c;
     create_graph(g);
     click_begin(g, c);
-    
     menu(c, g);
 
     return 0;

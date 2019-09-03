@@ -5,7 +5,7 @@ Projeto 1
 
 Compilar o software:
 -> Digite no terminal com o diretorio da pasta: make
--> Para executar o programa ./prog
+-> Para executar o programa: ./prog
 
 O Software abrira um menu:
 Onde pressionando: 

@@ -2,6 +2,37 @@
 #include "graph.h"
 using namespace std;
 
+void menu(click& c, graph& g){
+    int opcao;
+    puts("\n MENU -> [Escolha a Opcao]\n\n");
+    puts("[1] O vértice, e seu respectivo grau\n");
+    puts("[2] Todos os Cliques Maximais\n");
+    puts("[3] Coeficiente de Aglomeracao de cada vertice, e a medio do grafo\n");
+    puts("[0] Voltar ao menu\n");
+
+    while(1){
+        cin >> opcao;
+    switch (opcao)
+    {
+        case 0:
+            return;
+            break;
+        case 1:
+            bfs(g, 1);
+            break;
+        case 2:
+            print_click(c); 
+            break;
+        case 3:
+            all_agl(c, g);
+        break;
+        default:
+            cout << "Selecione uma opcao valida\n";
+            break;
+            }
+        }
+}
+
 
 void create_graph(graph& g) {
     fstream mygraph;
@@ -147,6 +178,6 @@ void all_agl(click& c, graph& g){
         cout << "Coeficiente de Aglomeracao por vertice " <<  i << " : " << agl << endl;
     }
 
-    cout << "Coeficiente de Aglomeracao Medio : " << media / (g.size()-1) << endl;
+    cout << "\n\nCoeficiente de Aglomeracao Medio : " << media / (g.size()-1) << endl;
 
 }

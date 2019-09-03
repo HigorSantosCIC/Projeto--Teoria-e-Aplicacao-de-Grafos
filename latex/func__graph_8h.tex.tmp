@@ -1,0 +1,206 @@
+\hypertarget{func__graph_8h}{}\section{func\+\_\+graph.\+h File Reference}
+\label{func__graph_8h}\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+Include dependency graph for func\+\_\+graph.\+h\+:
+% FIG 0
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}\label{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}} 
+typedef vector$<$ vector$<$ int $>$ $>$ \hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click}
+\begin{DoxyCompactList}\small\item\em Tipagem do vetor bidimensional (int) do clique. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}\label{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}} 
+typedef vector$<$ vector$<$ int $>$ $>$ \hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph}
+\begin{DoxyCompactList}\small\item\em Tipagem do vetor bidimensional (int) do grafo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{func__graph_8h_a1c0e033b6094a034e071d97731afc7aa}{add\+\_\+edge} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g, int source, int fate)
+\begin{DoxyCompactList}\small\item\em Cria arestas a partir do dado de origem e destino. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_ac0a7d114d3e418df682f5e01e9929504}{all\+\_\+agl} (\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&c, \hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g)
+\begin{DoxyCompactList}\small\item\em Funcao responsavel pelo calculo das aglomeracoes dos vertices, onde pega-\/se a partir dos cliques que sao triangular. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_ab0856e5a53acc2ef6fc2ca2957a1fe4c}{bfs\+\_\+alg} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g, int vertex, vector$<$ bool $>$ \&visited)
+\begin{DoxyCompactList}\small\item\em Modularizacao do Algoritimo de percorrimento no Grafo\+: Breadth First Search. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_a96e3d705859b25e81c11e116630d235b}{bfs} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g, int vertex)
+\begin{DoxyCompactList}\small\item\em Algoritimo de percorrimento no Grafo\+: Breadth First Search. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_a6ab6dcfed019b5be86a818ba94c8e9cc}{bosch\+\_\+alg} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g, \hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&c, vector$<$ int $>$ \&R, vector$<$ int $>$ \&P, vector$<$ int $>$ \&X)
+\begin{DoxyCompactList}\small\item\em Algoritimo para encontrar o clique maximal de grafos nao direcionados\+: Bron-\/\+Kerbosch. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_ab5d2d385bebd07e19216f133dcc1042e}{click\+\_\+begin} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g, \hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&c)
+\begin{DoxyCompactList}\small\item\em Modularizacao do Uso do Bron-\/\+Kerbosch. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_a18dca5e3f1518a96e1c2afc185d3baf7}{create\+\_\+graph} (\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g)
+\begin{DoxyCompactList}\small\item\em Criação de um grafo a partir dos dados contidos no Arquivo \char`\"{}.\+mtx\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_a3310113bc1f32fd1ec469815153de3f8}{menu} (\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&c, \hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&g)
+\begin{DoxyCompactList}\small\item\em Criacao de um menu principal para selecionar as funcoes principais. \end{DoxyCompactList}\item 
+void \hyperlink{func__graph_8h_a4db05b6361a690be16205808021d8bbf}{print\+\_\+click} (\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&c)
+\begin{DoxyCompactList}\small\item\em Usado para imprimir os cliques maximais ordenados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Higor Gabriel Azevedo Santos 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2019-\/09-\/01 
+\end{DoxyDate}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{func__graph_8h_a1c0e033b6094a034e071d97731afc7aa}\label{func__graph_8h_a1c0e033b6094a034e071d97731afc7aa}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!add\+\_\+edge@{add\+\_\+edge}}
+\index{add\+\_\+edge@{add\+\_\+edge}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{add\+\_\+edge()}{add\_edge()}}
+{\footnotesize\ttfamily void add\+\_\+edge (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g,  }\item[{int}]{source,  }\item[{int}]{fate }\end{DoxyParamCaption})}
+
+
+
+Cria arestas a partir do dado de origem e destino. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em source} & \\
+\hline
+{\em fate} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_ac0a7d114d3e418df682f5e01e9929504}\label{func__graph_8h_ac0a7d114d3e418df682f5e01e9929504}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!all\+\_\+agl@{all\+\_\+agl}}
+\index{all\+\_\+agl@{all\+\_\+agl}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{all\+\_\+agl()}{all\_agl()}}
+{\footnotesize\ttfamily void all\+\_\+agl (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&}]{c,  }\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Funcao responsavel pelo calculo das aglomeracoes dos vertices, onde pega-\/se a partir dos cliques que sao triangular. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em g} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_a96e3d705859b25e81c11e116630d235b}\label{func__graph_8h_a96e3d705859b25e81c11e116630d235b}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!bfs@{bfs}}
+\index{bfs@{bfs}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{bfs()}{bfs()}}
+{\footnotesize\ttfamily void bfs (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g,  }\item[{int}]{vertex }\end{DoxyParamCaption})}
+
+
+
+Algoritimo de percorrimento no Grafo\+: Breadth First Search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em vertex} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_ab0856e5a53acc2ef6fc2ca2957a1fe4c}\label{func__graph_8h_ab0856e5a53acc2ef6fc2ca2957a1fe4c}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!bfs\+\_\+alg@{bfs\+\_\+alg}}
+\index{bfs\+\_\+alg@{bfs\+\_\+alg}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{bfs\+\_\+alg()}{bfs\_alg()}}
+{\footnotesize\ttfamily void bfs\+\_\+alg (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g,  }\item[{int}]{vertex,  }\item[{vector$<$ bool $>$ \&}]{visited }\end{DoxyParamCaption})}
+
+
+
+Modularizacao do Algoritimo de percorrimento no Grafo\+: Breadth First Search. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em vertex} & \\
+\hline
+{\em visited} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_a6ab6dcfed019b5be86a818ba94c8e9cc}\label{func__graph_8h_a6ab6dcfed019b5be86a818ba94c8e9cc}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!bosch\+\_\+alg@{bosch\+\_\+alg}}
+\index{bosch\+\_\+alg@{bosch\+\_\+alg}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{bosch\+\_\+alg()}{bosch\_alg()}}
+{\footnotesize\ttfamily void bosch\+\_\+alg (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g,  }\item[{\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&}]{c,  }\item[{vector$<$ int $>$ \&}]{R,  }\item[{vector$<$ int $>$ \&}]{P,  }\item[{vector$<$ int $>$ \&}]{X }\end{DoxyParamCaption})}
+
+
+
+Algoritimo para encontrar o clique maximal de grafos nao direcionados\+: Bron-\/\+Kerbosch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em c} & \\
+\hline
+{\em R} & \\
+\hline
+{\em P} & \\
+\hline
+{\em X} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_ab5d2d385bebd07e19216f133dcc1042e}\label{func__graph_8h_ab5d2d385bebd07e19216f133dcc1042e}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!click\+\_\+begin@{click\+\_\+begin}}
+\index{click\+\_\+begin@{click\+\_\+begin}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{click\+\_\+begin()}{click\_begin()}}
+{\footnotesize\ttfamily void click\+\_\+begin (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g,  }\item[{\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Modularizacao do Uso do Bron-\/\+Kerbosch. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_a18dca5e3f1518a96e1c2afc185d3baf7}\label{func__graph_8h_a18dca5e3f1518a96e1c2afc185d3baf7}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!create\+\_\+graph@{create\+\_\+graph}}
+\index{create\+\_\+graph@{create\+\_\+graph}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{create\+\_\+graph()}{create\_graph()}}
+{\footnotesize\ttfamily void create\+\_\+graph (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Criação de um grafo a partir dos dados contidos no Arquivo \char`\"{}.\+mtx\char`\"{}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_a3310113bc1f32fd1ec469815153de3f8}\label{func__graph_8h_a3310113bc1f32fd1ec469815153de3f8}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!menu@{menu}}
+\index{menu@{menu}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&}]{c,  }\item[{\hyperlink{func__graph_8h_a10d8fc14cfd2d3147a2f621196d6f06f}{graph} \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Criacao de um menu principal para selecionar as funcoes principais. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+{\em g} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{func__graph_8h_a4db05b6361a690be16205808021d8bbf}\label{func__graph_8h_a4db05b6361a690be16205808021d8bbf}} 
+\index{func\+\_\+graph.\+h@{func\+\_\+graph.\+h}!print\+\_\+click@{print\+\_\+click}}
+\index{print\+\_\+click@{print\+\_\+click}!func\+\_\+graph.\+h@{func\+\_\+graph.\+h}}
+\subsubsection{\texorpdfstring{print\+\_\+click()}{print\_click()}}
+{\footnotesize\ttfamily void print\+\_\+click (\begin{DoxyParamCaption}\item[{\hyperlink{func__graph_8h_a9b23a78b0c5af15cdc487c4ab0663100}{click} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Usado para imprimir os cliques maximais ordenados. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & \\
+\hline
+\end{DoxyParams}

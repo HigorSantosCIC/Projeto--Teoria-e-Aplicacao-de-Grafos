@@ -45,7 +45,7 @@ void create_graph(graph& g) {
         formato >> x >> y;
         add_edge(g,x,y);
     }
-}
+}   
 
 void add_edge(graph& g, int source, int fate){
     g[source].push_back(fate);
